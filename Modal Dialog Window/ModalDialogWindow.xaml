@@ -1,0 +1,25 @@
+﻿<Window x:Class="Modal_Dialog_Window.ModalDialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modal_Dialog_Window"
+        mc:Ignorable="d"
+        Title="New person" 
+        Height="275" Width="280">
+    <Grid x:Name="modalDialogWindow" >
+
+
+        <TextBlock x:Name="name" HorizontalAlignment="Left" Margin="10,10,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="32" Width="85" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="nameInput" HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Height="29" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="surname" HorizontalAlignment="Left" Margin="138,10,0,0" Text="Surname" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="32" Width="112"/>
+        <TextBox x:Name="surnameInput" HorizontalAlignment="Left" Margin="135,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Height="29"/>
+        <TextBlock x:Name="yearOfBirth" HorizontalAlignment="Left" Margin="10,93,0,0" Text="Year" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="32" Width="60"/>
+        <TextBox x:Name="yearOfBirthInput" HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Height="28" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="city" HorizontalAlignment="Left" Margin="138,91,0,0" Text="Miasto" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="32" Width="72"/>
+        <TextBox x:Name="cityInput" HorizontalAlignment="Left" Margin="138,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Height="28"/>
+        <Button x:Name="cancel" Content="Cancel" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" FontSize="24" Height="36" Width="120" Click="Cancel_Click"/>
+        <Button x:Name="confirm" Content="Confirm" HorizontalAlignment="Left" Margin="140,173,0,0" VerticalAlignment="Top" FontSize="24" Height="36" Width="118" Click="Confirm_Click"/>
+
+    </Grid>
+</Window>
